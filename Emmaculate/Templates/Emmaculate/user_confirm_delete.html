@@ -1,0 +1,20 @@
+{% extends 'Emmaculate/base.html'%}
+{% block title%}delete member{% endblock%}
+{%block content%}
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="card card-body my-1">
+                <h3>Delete<b>{{object.name}}</b>?</h3>
+                <hr>
+                <form method="post" class="form-horizontal">
+                    <div class="form-group"></div>
+                    {%csrf_token%}
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <a href="{% url 'Emmaculate:index'%}" class="btn btn-primary">cancel</a>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+{% endblock %}
