@@ -49,8 +49,7 @@
                     <div class="modal-body">
                         <p>
                             {{prof.name}} is {{prof.age}} years old {% if prof.is_female%}She {% else%}He{%endif%} is a {{prof.nationality}} citizen {% if prof.is_female%}She {% else%}He{%endif%}
-                            went to {{prof.primary}} and {{prof.highSchool}} you can reach {% if prof.is_female%}Her {% else%}Him{%endif%} through <a href="mail to:email@gmail.com"/>
-                            {{prof.email}} {% if prof.is_female%}She {% else%}He{%endif%} is a
+                            went to {{prof.primary}} and {{prof.highSchool}} you can reach {% if prof.is_female%}Her {% else%}Him{%endif%} through <a href="mail to:email@gmail.com"> {{prof.email}} </a> {% if prof.is_female%}She {% else%}He{%endif%} is a
                             {{prof.occupation}} by profession and follows {{prof.principle}}. {% if prof.is_female%}She {% else%}He{%endif%} lives at
                             {{prof.residence}} and goes to {{prof.campus}} to pursue {{prof.course}} when free {% if prof.is_female%}She {% else%}He{%endif%} does {{prof.hobby}}
                         </p>
